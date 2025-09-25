@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustentabilidade em Mamonas</title>
+
+    <!-- CSS incorporado -->
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f9f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2e8b57;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .intro, .pergunta {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 5px solid #2e8b57;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #256e47;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sustentabilidade em Mamonas</h1>
+        </header>
+
+        <section class="intro">
+            <h2>O que é Sustentabilidade?</h2>
+            <p>
+                Sustentabilidade é a capacidade de suprir as necessidades da geração atual 
+                sem comprometer a capacidade das futuras gerações de suprirem as suas próprias. 
+                Envolve ações conscientes no uso dos recursos naturais, promovendo o equilíbrio entre 
+                o meio ambiente, a sociedade e a economia.
+            </p>
+            <p>
+                Na nossa região — Mamonas e o norte de Minas Gerais — é essencial refletirmos 
+                sobre os desafios locais relacionados à sustentabilidade, como o uso da água, o desmatamento, 
+                a agricultura familiar, e o acesso a serviços básicos.
+            </p>
+        </section>
+
+        <section class="pergunta">
+            <h2>Queremos ouvir você!</h2>
+            <form action="https://formspree.io/f/mjkakgwa" method="POST">
+                <label for="resposta">Qual você acha que é o maior problema da nossa Região (Mamonas/Norte de Minas)?</label>
+                <textarea id="resposta" name="resposta" rows="5" placeholder="Escreva sua opinião aqui..." required></textarea>
+
+                <!-- Campo oculto (opcional): assunto do e-mail recebido -->
+                <input type="hidden" name="_subject" value="Nova resposta do site Sustentabilidade">
+
+                <!-- Redireciona para uma página de obrigado (opcional) -->
+                <!-- <input type="hidden" name="_redirect" value="obrigado.html"> -->
+
+                <button type="submit">Enviar Resposta</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2025 Projeto Sustentável Mamonas. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
